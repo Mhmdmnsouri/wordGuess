@@ -1,0 +1,9 @@
+@media (min-width: 575.98px) {
+    body {
+        height: 45em !important;
+    }
+
+    .message {
+        margin-top: 3em !important;
+    }
+}
