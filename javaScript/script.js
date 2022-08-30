@@ -41,7 +41,6 @@ button.addEventListener('click', function () {
     } else {
         let tempGuess = guess.value.toLowerCase();
 
-
         if (tempGuess === scramble) {
             inPlay = false;
             message.innerHTML = "Correct, it was " + scramble + "</br> Ready for the next one?";
