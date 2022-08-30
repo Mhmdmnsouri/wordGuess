@@ -39,7 +39,7 @@ button.addEventListener('click', function () {
         scrambled = randomArray(scramble.split("")).join("");
         message.innerHTML = scrambled;
     } else {
-        let tempGuess = guess.value;
+        let tempGuess = guess.value.toLowerCase();
 
 
         if (tempGuess === scramble) {
@@ -49,7 +49,7 @@ button.addEventListener('click', function () {
             guess.classList.toggle("hidden");
             scoreText.innerHTML = "Your Score : " + score++;
         } else if (tempGuess === "") {
-            message.innerHTML = "input can't be empty! </br> just write it :) </br>" + scrambled;
+            message.innerHTML = "input can't be empty! </br> just write your guess :) </br>" + scrambled;
         } else {
             message.innerHTML = tempGuess + " is not correct !</br> Try again :) </br>" + scrambled;
         }
